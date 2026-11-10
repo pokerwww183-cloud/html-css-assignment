@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry - Tuition Class</title>
+</head>
+<body>
+  <h1>Enquiry Form</h1>
+
+  <form action="" method="get">
+
+    <!-- Student name -->
+    <p>
+      <label for="student-name">Student Name:</label>
+      <input type="text" id="student-name" name="student_name"
+             required minlength="3"
+             title="Name must be at least 3 characters long">
+    </p>
+
+    <!-- Parent email -->
+    <p>
+      <label for="parent-email">Parent Email:</label>
+      <input type="email" id="parent-email" name="parent_email"
+             required
+             title="Enter a valid email address, e.g. parent@example.com">
+    </p>
+
+    <!-- Parent phone -->
+    <p>
+      <label for="parent-phone">Parent Phone:</label>
+      <input type="tel" id="parent-phone" name="parent_phone"
+             required pattern="[0-9]{10}"
+             title="Phone number must be exactly 10 digits">
+    </p>
+
+    <!-- Age -->
+    <p>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age"
+             required min="5" max="18"
+             title="Age must be between 5 and 18">
+    </p>
+
+    <!-- Subject -->
+    <p>
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="">Choose a subject</option>
+        <!-- NOTE: replace these 5 with the subjects from your index.html -->
+        <option value="mathematics">Mathematics</option>
+        <option value="science">Science</option>
+        <option value="english">English</option>
+        <option value="social-studies">Social Studies</option>
+        <option value="hindi">Hindi</option>
+      </select>
+    </p>
+
+    <!-- Mode (radio group: same name) -->
+    <p>
+      Mode:
+      <input type="radio" id="mode-online" name="mode" value="online">
+      <label for="mode-online">Online</label>
+
+      <input type="radio" id="mode-offline" name="mode" value="offline">
+      <label for="mode-offline">Offline</label>
+    </p>
+
+    <!-- Message -->
+    <p>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40"></textarea>
+    </p>
+
+    <!-- Buttons -->
+    <p>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </p>
+
+  </form>
+</body>
+</html>
