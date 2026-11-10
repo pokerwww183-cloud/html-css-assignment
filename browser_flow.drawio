@@ -1,0 +1,36 @@
+
+<mxfile host="app.diagrams.net">
+  <diagram name="Browser Flow">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" page="1" pageWidth="1169" pageHeight="827">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="a" value="1. User enters website URL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="350" y="40" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b" value="2. Browser sends request to server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="350" y="150" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c" value="3. Server sends HTML and CSS files" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="350" y="260" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d" value="4. Browser builds the DOM tree" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="350" y="370" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e" value="5. Browser displays the webpage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="350" y="480" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ab" style="endArrow=block;html=1;" edge="1" parent="1" source="a" target="b"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="bc" style="endArrow=block;html=1;" edge="1" parent="1" source="b" target="c"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cd" style="endArrow=block;html=1;" edge="1" parent="1" source="c" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="de" style="endArrow=block;html=1;" edge="1" parent="1" source="d" target="e"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
